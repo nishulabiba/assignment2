@@ -288,6 +288,17 @@ color: #727272;
     padding: 15px 45px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    transition: width 1s, height 2s, transform 3s;
+}
+/*-------------------------------------
+        adding transition on facts
+------------------------------------- */
+.fact:hover{
+    width: 500px;
+    height:500px;
+    border-radius: 60px;
+    background-color: lightpink;
+    transform: rotate(360deg);
 }
 .fact img{
     margin-top: 30px;
@@ -345,7 +356,19 @@ color: #727272;
     width: 160px;
     height: 50px;
     mix-blend-mode: luminosity;
+    transition: height 4s, transform 2s;
 }
+/*-----------------------------
+     transition on sponsors
+----------------------------- */
+.sponsors img:hover{
+    filter: none;
+    width: 600px;
+    height: auto;
+    transform: scaleX(8px);
+    transform: rotate(360deg);
+}
+
 /*----------------------------------------------
               footer starts
 ---------------------------------------------- */
@@ -382,13 +405,15 @@ color: #727272;
         flex-direction: column;
     }
     .navlinks{
-        margin-left: 0;
+        margin-left: 32%;
         display: flex;
         flex-direction: column;
         row-gap: 50px;
     }
     .title{
-        font-weight: bolder;
+        margin-left: 35%;
+        font-weight: 900;
+        font-size: 60px;
     }
     .navlink{
         font-size: 35px;
@@ -396,8 +421,8 @@ color: #727272;
     }
     .title1{
         margin-top: 300px;
-        font-size: 50px;
-        font-weight: 500;
+        font-size: 55px;
+        font-weight: 800;
 
     }
     .headtext{
@@ -407,9 +432,11 @@ color: #727272;
         margin-bottom: 150px;
     }
     .head-section{
-        margin-left: 28%;
+        margin-left: 30%;
+        margin-bottom: 50px;
     }
     .header-section img{
+        margin-left: 30%;
         margin-top: 150px;
         width: 400px;
         height: 200px;
@@ -420,6 +447,7 @@ color: #727272;
         justify-content: center;
     }
     .images{
+        margin-left: 45%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -429,6 +457,7 @@ color: #727272;
         height: 200px;
     }
     .section1-info{
+        margin-left: 40%;
         height: 100px;
         width: 300px;
         margin-bottom: 160px;
@@ -438,12 +467,13 @@ color: #727272;
         justify-content: center;
     }
     .sec2-info{
+        margin-left: 35%;
         width: 400px;
         height: 500px;
         margin-bottom: 400px;
     }
     .img-btn{
-        margin-left: 15%;
+        margin-left: 25%;
         width: 400px;
         height: 600px;
         margin-bottom: 100px;
