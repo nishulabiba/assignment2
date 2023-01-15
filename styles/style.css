@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 *{
     font-family: 'Work Sans', sans-serif;
+    
     align-items: center;
 }
 body{
@@ -12,10 +13,7 @@ body{
 /*-----------------------
         header
 ----------------------- */
-.head{
-    
 
-}
 .head-background{
     background: rgba(255, 144, 14, 0.1);
     width: 1950px;
@@ -27,6 +25,7 @@ body{
 nav{
     display: flex;
     justify-content: center;
+    
 }
 .title{
     width: 302px;
@@ -40,6 +39,7 @@ text-align: center;
 color: #131313;
 }
 .navlinks{
+    margin-top: 55px;
     display: flex;
     column-gap: 60px;
     margin-left: 673px;
@@ -62,6 +62,7 @@ color: #424242;
 .header-section{
     margin-top: 65px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     row-gap: 150px;
 
@@ -366,4 +367,121 @@ color: #727272;
     font-weight: 400;
     font-size: 20px;
     color: #424242;
+}
+/*----------------------------------------------
+           making responsive webpages
+------------------------------------------------ */
+/*----------------------------------------------------
+              for mobile devices
+--------------------------------------------------- */
+@media only screen and (max-width:688px) {
+    nav, header{
+        display: flex;
+        justify-content: flex-start;
+        row-gap: 15px;
+        flex-direction: column;
+    }
+    .navlinks{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .title{
+        font-weight: bolder;
+    }
+    .navlink{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .title1{
+        margin-top: 300px;
+        font-size: 50px;
+        font-weight: 500;
+
+    }
+    .headtext{
+        font-size: 16px;
+    }
+    .explore{
+        margin-bottom: 150px;
+    }
+    .head-section{
+        margin-left: 28%;
+    }
+    .header-section img{
+        margin-top: 150px;
+        width: 400px;
+        height: 200px;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .images img{
+        width: 200px;
+        height: 200px;
+    }
+    .section1-info{
+        height: 100px;
+        width: 300px;
+        margin-bottom: 160px;
+    }
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sec2-info{
+        width: 400px;
+        height: 500px;
+        margin-bottom: 400px;
+    }
+    .img-btn{
+        margin-left: 15%;
+        width: 400px;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            
+    }
+    .sec3info{
+        margin-top: 300px;
+        text-align: center;
+    }
+    .sec3-title{
+        margin-left: 35%;
+    }
+    .sec3-text{
+        margin-left: 50%;
+    }
+    .facts{
+        margin-left: 35%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .sec4-info{
+        margin-left: 35%;
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 35%;
+    }
+    
+    .foottext{
+        margin-left: 35%;
+    }
+
 }
